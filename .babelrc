@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }]
+  ],
+  "plugins": [
+    "inferno",
+    "external-helpers",
+    "transform-object-rest-spread",
+  ]
+}
