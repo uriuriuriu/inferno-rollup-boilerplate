@@ -1,4 +1,4 @@
-# Inferno-Rollup boilerplate
+# Inferno-Rollup boilerplate 🛫
 > Rollup config for building Inferno apps
 
 - [x] compiles ES6 to ES5
