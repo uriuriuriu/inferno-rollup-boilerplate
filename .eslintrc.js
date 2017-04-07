@@ -17,17 +17,6 @@ module.exports = {
       "experimentalObjectRestSpread": true
     }
   },
-  "globals": {
-    "$": true,
-    "ga": true,
-    "google": true,
-    "FB": true,
-    "Intercom": true,
-    "intercomSettings": true,
-    "Raven": true,
-    "store": true,
-    "NODE_ENV": true
-  },
   "rules": {
     "comma-spacing": 2,
     "eqeqeq": [2, "always"],
