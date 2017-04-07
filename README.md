@@ -3,6 +3,7 @@
 
 - [x] compiles ES6 to ES5
 - [x] compiles SCSS
+- [x] lint JS
 - [x] watch for file changes and reload browser
 
 ### Install ⚙
