@@ -26,20 +26,26 @@ export default {
   plugins: [
     // sass
     sass({ insert: true, output: false }),
+    // replace
+    replace({
+      exclude: 'node_modules/**',
+      ['process.env.NODE_ENV']: JSON.stringify(process.env.NODE_ENV || 'development')
+    }),
     // bundle
-    commonjs({ namedExports: {}, include: ['node_modules/**/*.js'] }),
+    commonjs({
+      namedExports: {},
+      include: ['node_modules/**/*.js']
+    }),
     // lint
     eslint({ exclude: 'src/styles/**' }),
     // transpile
     babel({ exclude: 'node_modules/**' }),
     // globals
     globals(),
-    // replace
-    replace({ exclude: 'node_modules/**', NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') }),
-    // uglify
-    (isProduction && uglify()),
     // resolve
     resolve({ jsnext: true, browser: true, main: true }),
+    // uglify
+    (isProduction && uglify()),
   ]
 
 }
